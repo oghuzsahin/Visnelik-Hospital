@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+:root {
+    --main-color: #C70E0E;
+    --black-color: #252525;
+    --white-color: rgb(251, 247, 247);
+    --border: 0.1rem solid #C70E0E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+section {
+    padding: 0 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 6rem;
+    border-radius: 30rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    box-shadow: 5px 10px 18px -11px rgba(37,37,37,0.36);
+}
+
+.btn:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+/* Header Start */
+
+.header .logo {
+    width: 25rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    z-index: 1000;
+}
+
+.header .site-nav a {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.header .site-nav a:hover {
+    color: var(--main-color);
+}
+
+.header .buttons button {
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 2rem;
+    color: var(--black-color);
+}
+
+.header .buttons button:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* Header End */
+
+
+/* Home Start */
+
+section {
+    padding: 0 7%;
+}
+
+.home {
+    background-color: rgb(240, 235, 235);
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.home .home-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.home .home-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .home-container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 80%;
+}
+
+.home .home-container .content h4 {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    margin: 2rem 0;
+}
+
+.home .home-container .content h1 {
+    color: var(--black-color);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home .home-container .content p {
+    color: var(--black-color);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Home End */
+
+/* Schedule Start */
+
+.schedule {
+    padding: 5rem 7%;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.schedule .schedule-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.schedule .schedule-container .cell-box {
+    flex: 2 40rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-one {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 5rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-one i {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 3.5rem;
+    color: var(--main-color);
+}
+
+.schedule .schedule-container .cell-box .cell-area-one i:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.schedule .schedule-container .cell-box .cell-area-one h3 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-one p {
+    font-size: 1.5rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-two {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-two i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    padding-left: 3.5rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-two i:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.schedule .schedule-container .cell-box .cell-area-two h3 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.schedule .schedule-container .cell-box .cell-area-two p {
+    font-size: 1.5rem;
+}
+
+.schedule .schedule-container .sidebar {
+    flex: 1 40rem;
+}
+
+.schedule .schedule-container .sidebar h4 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.schedule .schedule-container .sidebar h2 {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.schedule .schedule-container .sidebar p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+/* Schedule End */
+
+/* About Start */
+
+.about {
+    background-color: rgb(240, 235, 235);
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.about .row .image {
+    flex: 1 40rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .about-content {
+    flex: 2 40rem;
+}
+
+.about .row .about-content h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.about .row .about-content h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+}
+
+.about .row .about-content p {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.about .row .about-content a {
+    margin-bottom: 2rem;
+}
+
+/* About End */
+
+/* Consultation Start */
+
+.consultation {
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.consultation .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.consultation .row .consultation-content {
+    flex: 1 40rem;
+    padding-top: 5rem;
+}
+
+.consultation .row .consultation-content h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+}
+
+.consultation .row .consultation-content p {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.consultation .row .consultation-content h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.consultation .row .consultation-content h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 5rem;
+}
+
+.consultation .row .image {
+    flex: 1 40rem;
+    padding-left: 10rem;
+}
+
+.consultation .row .image i {
+    font-size: 25rem;
+    color: var(--main-color);
+    padding-left: 5rem;
+}
+
+.consultation .row .image i:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Consultation End */
+
+/* Team Start */
+
+.team {
+    border-bottom: 0.1rem solid var(--main-color);
+    background-color: rgb(240, 235, 235);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.team h2 {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.team .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+}
+
+.team .team-container .team-box {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team .team-container .team-box .team-head-1 {
+    padding: 10rem;
+    background-image: url(../images/women.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--main-color);
+}
+
+.team .team-container .team-box .team-head-2 {
+    padding: 10rem;
+    background-image: url(../images/men.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 24rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--main-color);
+}
+
+.team .team-container .team-box .team-head-3 {
+    padding: 10rem;
+    background-image: url(../images/child.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 28rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--main-color);
+}
+
+.team .team-container .team-box .team-bottom {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.team .team-container .team-box .team-bottom h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.team .team-container .team-box .team-bottom p {
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+
+/* Team End */
+
+/* Review Start */
+
+.review {
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 10rem;
+}
+
+.review h2 {
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.review .review-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.review .review-container .review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 235, 235);
+    border-radius: 3rem;
+}
+
+.review .review-container .review-box h3 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.review .review-container .review-box .pic-1 {
+    padding: 8rem;
+    background-image: url(../images/people-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 16rem;
+    border-radius: 50%;
+}
+
+.review .review-container .review-box .pic-1:hover {
+    transform: scale(1.2);
+}
+
+.review .review-container .review-box .pic-2 {
+    padding: 8rem;
+    background-image: url(../images/people-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 16.5rem;
+    border-radius: 50%;
+}
+
+.review .review-container .review-box .pic-2:hover {
+    transform: scale(1.2);
+}
+
+.review .review-container .review-box .pic-3 {
+    padding: 8rem;
+    background-image: url(../images/people-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 23rem;
+    border-radius: 50%;
+}
+
+.review .review-container .review-box .pic-3:hover {
+    transform: scale(1.2);
+}
+
+.review .review-container .review-box p {
+    font-size: 1.4rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+.review .review-container .review-box .stars {
+    padding-top: 3rem;
+}
+
+.review .review-container .review-box .stars i {
+    font-size: 1.5rem;
+    color: goldenrod;
+    padding-bottom: 2rem;
+}
+
+/* Review End */
+
+.surgeon {
+    padding: 0;
+}
+
+.surgeon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Appointment Start */
+
+.appointment {
+    padding-top: 5rem;
+    background-color: rgb(240, 235, 235);
+}
+
+.appointment .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.appointment .row .appointment-content {
+    flex: 1 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.appointment .row .appointment-content i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.appointment .row .appointment-content h3 {
+    font-size: 2.8rem;
+}
+
+.appointment .row form {
+    flex: 1 40rem;
+}
+
+.appointment .row form .input-box {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: 0.1rem solid var(--black-color);
+    background-color: white;
+}
+
+.appointment .row form .input-box input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--black-color);
+    border: 1rem var(--black-color);
+    text-transform: none;
+}
+
+.appointment .row form .input-box i {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.appointment .row form .input-box .message {
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.appointment .row .appointment-button {
+    display: flex;
+    justify-content: center;
+}
+
+.appointment .row a {
+    margin-bottom: 5rem;
+}
+
+.appointment .row #arrow-down {
+    display: none;
+}
+
+/* Appointment End */
+
+/* Footer Start */
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .footer-head {
+    padding-bottom: 2rem;
+}
+
+.footer .footer-head a {
+    color: var(--black-color);
+    font-size: 1.3rem;
+    margin: 0 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--main-color);
+}
+
+.footer .footer-head a:hover {
+    color: var(--main-color);
+}
+
+.footer .share {
+    padding: 2rem 0;
+}
+
+.footer .share a {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+}
+
+.footer .share a:hover {
+    color: var(--black-color);
+}
+
+.footer .footer-logo {
+    padding-bottom: 2rem;
+    
+}
+
+.footer .footer-logo .logo-2 {
+    width: 25rem;
+}
+
+.footer .credit {
+    font-size: 1.2rem;
+    padding-top: 4rem;
+}
+
+/* Footer End */
+
+/* Responsive Start */
+
+@media (max-width:1200px) {
+    .header .site-nav a {
+        margin: 0 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .site-nav {
+        position: absolute;
+        top: -200%;
+        left: 0;
+        right: 0;
+        padding-top: 10rem;
+        background-color: var(--black-color);
+        height: 100vh;
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+
+    .header .site-nav.active {
+        top: 12%;
+    }
+
+    .header .site-nav a {
+        color: var(--white-color);
+        display: block;
+        text-align: center;
+        margin: 2rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .appointment .row .appointment-content i {
+        display: none;
+    }
+}
+
+
+@media (max-width:1000px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1000px) {
+    section {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width:900px) {
+    .schedule .schedule-container {
+        display: block;
+    }
+}
+
+@media (max-width:900px) {
+    .schedule .schedule-container .cell-box .cell-area-one {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:900px) {
+    .schedule .schedule-container .cell-box .cell-area-two i {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width:900px) {
+    .review h2 {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .footer {
+        margin: 1rem 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .footer .footer-head a {
+        border-bottom: none;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .home .home-container .content {
+        padding-top: 2rem;
+        padding-left: 3rem;
+    }
+}
+
+@media (max-width:800px) {
+    .schedule .sidebar {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .schedule .schedule-container .cell-box .cell-area-two {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:800px) {
+    .schedule .schedule-container .cell-box .cell-area-one {
+        gap: 2rem;
+    }
+}
+
+@media (max-width:800px) {
+    .about .row {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .consultation .row {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .consultation .row .consultation-content h3 {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .consultation .row .image {
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:700px) {
+    .appointment .row .appointment-content #arrow-down {
+        display: block;
+        margin-left: 1rem;
+        font-size: 2.8rem;
+    }
+}
